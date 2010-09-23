@@ -133,6 +133,6 @@
         return o;
     }
 	$(function(){
-		gcf = new gcfnotify(gcfnConfig);
+		gcf = new gcfnotify(typeof(gcfnConfig)!=='undefined'?gcfnConfig:null));
 	});
 })(this,this.document);
