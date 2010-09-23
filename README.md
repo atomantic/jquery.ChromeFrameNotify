@@ -11,10 +11,7 @@
 
 #What it does:#
 
-This library detects versions of IE compatible with the [http://www.google.com/chromeframe](Google Chrome Frame) plugin and alerts the user that the plugin is available for download.
-
-#TODO:#
-* Make Localization Friendly
+This library detects versions of IE compatible with the [http://www.google.com/chromeframe](Google Chrome Frame) plugin and alerts the user that the plugin is available for install. It looks like the standard IE update bar.
 
 #Usage:#
 
@@ -37,5 +34,5 @@ Add the following to your page:
 
 This plugin requires the latest version of [http://jquery.com/](jQuery). I highly recommend using the [http://code.google.com/apis/libraries/devguide.html#jquery](Google Hosted Library)
 
-View the demo source for some more examples:
+View the demo page in IE to see a working sample:
 [Demo](http://atomantic.github.com/jquery.ChromeFrameNotify)
