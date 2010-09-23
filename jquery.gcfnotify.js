@@ -52,7 +52,7 @@
 	        CFInstall.check({
 	            node: "gcfbar",
 	            onmissing: function () {
-	                $('body').prepend('<div id="gcfbar"><img src="'+o.imgpath+'icon.png" id="gcfupdate" />'+o.msgPre+'<a href="#" onclick="gcf.load();">'+o.msgLink+'</a>'+o.msgAfter+'.<img src="'+o.imgpath+'close.png" id="gcfclose" onclick="gcf.hide();"/></div>');
+	                $('body').prepend('<div id="gcfbar"><img src="'+o.imgpath+'icon.png" id="gcfupdate" />'+o.msgPre+'<a href="#" onclick="gcf.load();">'+o.msgLink+'</a>'+o.msgAfter+'<img src="'+o.imgpath+'close.png" id="gcfclose" onclick="gcf.hide();"/></div>');
 					$('#gcfbar').click(function(){
 						// load it if they click any part of the bar
 						gcf.load();
@@ -64,7 +64,7 @@
 	            }
 	        })
 	    }
-		$('head').append('<style type="text/css">#gcfbar{width:100%;padding:5px 0px;border-bottom:1px solid #666;position:absolute;top:0;left:0;z-index:10000;font-family:Bitstream Vera Sans,verdana,sans-serif !important;font-size:11px !important;color:#000 !important;background:#FFFFE1;cursor:default}#gcfupdate{float:left}#gcfclose{position:absolute;top:3px;right:3px;float:right;cursor:pointer}</style>');
+		$('head').append('<style type="text/css">#gcfbar{width:100%;padding:5px 0px;border-bottom:1px solid #666;position:absolute;top:0;left:0;text-align:center;z-index:10000;font-family:Bitstream Vera Sans,verdana,sans-serif !important;font-size:11px !important;color:#000 !important;background:#FFFFE1;cursor:default}#gcfupdate{float:left}#gcfclose{position:absolute;top:3px;right:3px;float:right;cursor:pointer}</style>');
     };
     /**
      * send to EULA for install
