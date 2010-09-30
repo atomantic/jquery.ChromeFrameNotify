@@ -18,7 +18,7 @@ This library detects versions of IE compatible with the [http://www.google.com/c
 Add the following to your page:
 
 	<!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
 		<script type="text/javascript">
 			// optional overrides for config
