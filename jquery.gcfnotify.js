@@ -30,7 +30,7 @@
 	
 	 * @param obj conf Configuration option overrides
 	 *
-	 * @return obj an instance of the constructed library object (deck of cards)
+	 * @return obj an instance of the constructed library object
 	 */
     var gcfnotify = window.gcfnotify = function(conf) {
         var c = objExtend(gcfnotify.defaults, conf);
@@ -38,7 +38,6 @@
             return new gcfnotify(c);
         }
         this.conf = c;
-        this.lib = $;
         this.init();
         return this;
     };
@@ -132,6 +131,7 @@
         }
         return o;
     }
+	// run on load
 	$(function(){
 		gcf = new gcfnotify(typeof(gcfnConfig)!=='undefined'?gcfnConfig:null)\);
 	});
